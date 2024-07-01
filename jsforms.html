@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h1>The Document Object</h1>
+<h2>The forms Property</h2>
+
+
+<p><form id="myCarForm">
+Favorite Car: <input type="text" name="fname" value="Volvo"></br>
+</br>
+
+
+
+<!-- <p><form id="myColorForm"> -->
+Favorite Color: <input type="text" name="favcolor" value="Blue">
+</p>
+
+
+<p>The id of the first form element is:</p>
+<button  onclick="document.getElementById('demo').innerHTML='Found ' +  document.getElementById('myCarForm').elements.length + ' elements in the form'";
+>Try It</button>
+<!-- <button  onclick="document.getElementById('demo').innerHTML='Found ' +  document.getElementById('myCarForm').elements[0].value; + 'elements in the form'"
+>Try It</button> -->
+<p id="demo"></p>
+ 
+<script>
+let fm= document.forms['myCarForm'];
+// alert(fm);
+// alert(fm.elements)
+// alert(fm.elements[0]);
+// function myFunction(){
+//     var x = document.getElementById("myCarForm").elements.length;
+//     document.getElementById("demo").innerHTML="Found"  + x +  "elements in the form";
+// }
+</script>
+
+
+</body>
+</html>

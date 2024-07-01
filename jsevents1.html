@@ -1,0 +1,43 @@
+<!-- double click event-->
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The ondblclick Event</h2>
+
+<p ondblclick="myFunction(event)">Double-click this paragraph to trigger a function.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(e) {
+    // alert(e)
+  document.getElementById("demo").innerHTML += "Hello World ";
+}
+</script>
+
+</body>
+</html>
+<!--focus event-->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The focus Event</h2>
+
+Enter your name: <input type="text" placeholder="Enter" onblur="myfunction(this)" onfocus="myFunction(this)" >
+
+<p>When the input field gets focus, a function changes the background-color.</p>
+
+<script>
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+function myfunction(y){
+  y.style.background = "white";
+  y.value = y.value.toUpperCase();
+  }
+</script>
+
+</body>
+</html> -->

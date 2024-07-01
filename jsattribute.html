@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<style>
+.democlass {
+  color: green;
+}
+.democlass1{
+  color: yellow;
+}
+</style>
+
+<body>
+<h1 id="myH1">The Element Object</h1>
+<h2 class="para">The setAttribute() Method</h2>
+<a class="para1" href="https://www.w3schools.com" target="_blank">W3 Schools</a>
+<p class="me">Hi I am Nihal</p>
+<p>Click "Add Class" to add a class attribute to the h1 element:</p>
+<p class="demo"></p>
+<button onclick="myFunction()">Click me</button>
+
+<script>
+    document.getElementsByClassName("para")[0].setAttribute("style" , "background-color:blue;"); 
+
+function myFunction() {
+  document.getElementById("myH1").setAttribute("class", "democlass"); 
+  document.getElementsByClassName("para")[0].setAttribute("class", "democlass1"); 
+  document.getElementsByClassName("para1")[0].setAttribute("target", "_self"); 
+  let text = element.getAttribute("me"); 
+  document.getElementsByClassName("demo").innerHTML = text;
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<style>
+   /* div p {
+     color: red; //selects all p inside div element
+   } */
+   /* div >p{
+    color: yellow; //selects all p which are children of div element
+   } */
+   /* div +p{
+    color: green; //selects the first p which is placed immediately after div element 
+   } */
+   div ~p{
+    color: violet; /*selects all p that are next to div element*/
+   }
+</style>
+   
+   <body>
+   
+   <div>
+     <p>This is a paragraph.</p>
+     <p>This is a paragraph.</p>
+   </div>
+   <p>This is a paragraph.</p>
+   <p>This is a paragraph.</p>
+   
+   </body>
+</html>

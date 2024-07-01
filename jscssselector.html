@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDIV {
+  border: 1px solid black;
+  margin: 5px;
+}
+</style>
+</head>
+<body>
+
+
+<p id="myDIV">HI
+  <h2 class="example">A heading with class="example" in div</h2>
+  <p class="intro">A p element with class="example" in a div.</p>
+  <p class="intro">Another p element with class="example" in a div.</p>
+  <p>A p element in div with a <span class="example">span element with class="example"</span> inside of it.</p>
+</div>
+
+
+<p>Click the button to add a background color to all elements with class="example" inside DIV.</p>
+
+
+<button onclick="myFunction()">Try it</button>
+
+
+<script>
+function myFunction() {
+  // alert()
+  window.alert("click")
+  var x = document.querySelectorAll("p.intro");
+  var y = document.querySelectorAll("p#myDIV");
+
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "red";
+  }
+  var j;
+  for (j = 0; j < y.length; j++) {
+    y[j].style.backgroundColor = "yellow";
+  }
+}
+</script>
+
+
+</body>
+</html>

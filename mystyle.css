@@ -1,0 +1,14 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: navy;
+    margin-inline-start: 200px;
+  }
+  p{
+    font-style: italic;
+    border: 10px solid yellow;
+    padding: 50px;
+    margin: 150px;
+  }

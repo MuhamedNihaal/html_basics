@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* ol[class~="Abc"] {
+                list-style-type: lower-alpha;
+                background: red;
+            } */
+             /* ol[class|="Abc"] {
+                list-style-type: lower-alpha;
+                background: lime;
+            } */
+            /* ol[class^="Abc"] {
+                list-style-type: upper-alpha;
+                background: grey;
+            } */
+            li[class$="abc"] {
+                list-style-type: upper-alpha;
+                background: hsl(9, 100%, 64%);
+            }
+        </style>
+    </head>
+    <body>
+        <ol class="hfh Abc def">
+            <li>
+              Red background for case-insensitive matching (default for the type selector)
+            </li>
+          </ol>
+          <ol class="Abc- bca">
+            <li>Lime background if `s` modifier is supported (case-sensitive match)</li>
+          </ol>
+          <ol class="Abc bca">
+            <li>Grey background if `s` modifier is supported (case-sensitive match)</li>
+          </ol>
+          <ol class="bcaab">
+            <li>
+              Green background if `i` modifier is supported (case-insensitive match)
+            </li>
+            <li class="bcaabc" >
+              Green background if `i` modifier is supported (case-insensitive match)
+            </li>
+          </ol>    
+    </body>
+</html>

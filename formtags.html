@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            body{
+                background-color:pink;
+                background-image: C:/MERN/8-bit City_1920x1080.jpg;
+            }
+            input[type="text"]:focus{
+                font-style: oblique;
+            }
+        </style>
+    </head>
+    <body style="padding-left:200px;">
+        <h2>HTML Forms</h2>
+        <form>
+            First Name:<br>
+            <!--input type-->
+            <input type="text", name="firstname"><br>
+            <br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text", name="lname"><br>
+            <br>
+            <!--Select Box/Dropdown-->
+            <select id="cars", name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br><br>
+            <!--Radio Button-->
+            <br>
+            GENDER:<br>
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio"  name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio"  name="gender" value="other">
+            <label for="other">Other</label>
+            <br><br>
+             <!-- check box  -->
+             <br><br>
+             <input type="checkbox" name="vehicle" value="Bike">
+             <label for="vehicle1"> I have a bike</label><br>
+             <input type="checkbox"  name="vehicle" value="Car">
+             <label for="vehicle2" value=> I have a car</label><br>
+             <input type="checkbox"  name="vehicle" value="Boat">
+             <label for="vehicle3"> I have a boat</label>
+             <br>
+             <!-- TEXTAREA -->
+
+             <br>
+             <div>Messages<br>
+             <textarea rows="5" cols="10" ></textarea>
+             </div>
+             <br>
+             <input type="submit" value="Submit">
+             <br><br>
+             <br><br>
+        </form>
+    </body>
+</html>
